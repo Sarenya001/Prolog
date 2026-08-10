@@ -1,10 +1,6 @@
-male(john).
-male(michael).
-female(mary).
-female(susan).
-parent(john,michael).
-parent(mary,michael).
-parent(john,susan).
-parent(mary,susan).
+male(tom). male(bob).
+female(pam).
+parent(tom,bob). parent(pam,bob).
+parent(bob,jim).
 father(X,Y):-male(X),parent(X,Y).
 mother(X,Y):-female(X),parent(X,Y).
